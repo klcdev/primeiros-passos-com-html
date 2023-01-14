@@ -1,7 +1,249 @@
-<html>
-    <body>
-        <h1>
-            HTML
-        </h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLC | Primeiros Passos com HTML</title>
+</head>
+<body>
+    <h1 id="inicio">Primeiros Passos com HTML</h1>
+    <hr />
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#historia">História dos computadores</a>
+         <ul>
+            <li>1a Geração</li>
+            <li>2a Geração</li>
+            <li>3a Geração</li>
+            <li>4a Geração</li>
+         </ul>
+      </li>
+        
+
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura-html">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#tags">O que são Tags?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
+    </ul>
+
+    <h2 id="historia">História dos computadores</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <h3>1a Geração</h3>
+    <p>
+      <strong>Harvard Mark I (1944) - </strong>Considerado o "primeiro" computador, o Mark I foi uma máquina criada na época para realizar
+      cálculos dificílimos, dado ao fato de que uma máquina podia realizar contas de forma mais eficaz do que um humano,
+      por conta da agilidade e principalmente pelo fato de máquinas não precisarem de pausas para "cafézinho".
+   </p>
+   <img src="https://www.thoughtco.com/thmb/b6GQkWD-BBjPRJ1wlEY2mCQtpDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-107636032-293dc66802a54c4685892d2bb7831ef5.jpg"max width="500px" >
+
+   <hr />
+
+   <p>
+      <strong>Colossus (1946) - </strong>Outra máquina criada na Alemanha para cálculos, porém esta também realizava criptografia de
+      informações, em Código Morse. 
+   </p>
+
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Frontal_view_of_the_reconstructed_Colossus_at_The_National_Museum_of_Computing%2C_Bletchley_Park.jpg/740px-Frontal_view_of_the_reconstructed_Colossus_at_The_National_Museum_of_Computing%2C_Bletchley_Park.jpg"max width="500px" >
+
+   <hr />
+
+   <p></p>
+      <strong>ENIAC (1946) - </strong>Era a concorrente americana da "Colossus", que também criptografava informações em Código Morse, linguagem
+      essa que ficou muito conhecida na época da Segunda Guerra Mundial.
+   </p>
+
+   <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg?w=876&h=484&crop=1"max width="500px" >
+
+
+   <blockquote><font color="gray">
+      No período da Segunda Guerra Mundial, a fim de dificultar a interceptação de conversas entre forças aliadas, foram criados os computadores
+   "Colossus" e "ENIAC". 
+   </font></blockquote>
+
+   <hr />
+
+   <h3 id="2a-geração">2a Geração (1959-1965)</h3>
+
+   <img src="https://histricoeevolucaodoscomputadores.files.wordpress.com/2016/09/2-3.jpg?w=730" max width="300px" >
+
+   <blockquote><font color="gray">
+      A válvula, utilizada na primeira geração (à esquerda), e os transistores utilizados na segunda geração (à direita). 
+   </font></blockquote>
+
+   <p>
+      Na <strong>primeira geração</strong>, os computadores eram gigantescos e ocupavam salas enormes, por conta das válvulas, que davam energia aos mecanismos das máquinas,
+      porém na <strong>segunda geração</strong> houve a inovação dos transistores, que eram dispositivos muito menores do que os anteriores, possibilitando a diminuição do tamanho
+      dos computadores (agora podiam ser arrastados de uma sala para outra). 
+   </p>
+   <img src="https://sites.google.com/site/topicosdeinformaticauesb/_/rsrc/1426976889437/historico-da-computacao/gerao-dos-computadores-16-638.jpg?height=213&width=400" max width="400px" >
+
+   <hr />
+
+   <h3 id="3a-geração">3a Geração (1965-1970)</h3>
+
+   <img src="https://ahistoriadacomputacao.files.wordpress.com/2010/05/dual_in_line.jpg" max width="300px" >
+
+   <blockquote><font color="gray">
+      O circuito integrado, composto por: Transistor, Capacitores e Resistores 
+   </font></blockquote>
+
+   <p>
+      Na <strong>terceira geração</strong>, os computadores ficaram menores ainda, graças ao circuito integrado, uma peça muito menor que
+      possibilitou a diminuição de tamanhos dessas máquinas ao mesmo temppo que aumentou a capacidade de processamento delas.
+   </p>
+   <img src="data:image/jpeg;base64,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" max width="300px" >
+
+   <hr />
+
+   <h3 id="4a-geração">4a Geração (a partir de 1971)</h3>
+
+   <img src="http://hmbtecnologia.com.br/wp-content/uploads/2020/10/gera%C3%A7%C3%A3o-4-300x244.png">
+
+   <p>
+      Era dos computadores pessoais (PC), onde o circuito intregrado deu lugar para os microprocessadores, tornando os computadores
+      mais acessiveis ao público, também houve a invenção do mouse (Apple) e essas máquinas vêm evoluindo
+      desde então para computadores gamers, notebooks, etc.  
+   </p>
+
+   <blockquote><font color="gray">
+      Dizem que a 5a Geração de computadores já está entre nós, com Computadores Quânticos, Assistêntes Eletrônicos (como a Alexa), Inteligências Artificiais, Metaverso, Criptomoedas e Robôs
+      cada vez tão presentes em nossos cotidianos como nunca antes. 
+   </font></blockquote>
+
+<hr />
+
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <p>
+      Client é o dispositivo que está consumindo informação da internet. Computadores, celulares, tablets, e outros.
+      O cliente busca informações por meio de navegadores, que então acessam servidores. Tudo isso para ter acesso a
+      sites, bancos de dados, arquivos cache e outros. 
+    </p>
+
+ <hr />
+
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+  
+    <p>
+      Servers ou servidores é como se fosse um banco de dados, que guarda informações ou até regras de uso de um computador.
+      Caso você queira acessar sua conta do <i>Facebook</i>, por exemplo, ao digitar seu login e senha, o navegador acessa os
+      bancos de dados da empresa para saber se esses dados são pertencentes a um usuário da rede social ou não, antes de permitir o acesso.
+      O servidor pode ser um servidor online, onde você pode contratar um pacote para armazenar seus dados na nuvem, ou pode ser um servidor
+      físico, um computador somente com essa missão. Há a opção de ser um único computador, ou vários computadores conectados, como em hi-techs
+      como <i>Google, Facebook</i> e outras empresas. Há diversos tipos de servers, como:
+    </p>
+
+
+    <p> <strong>Arquivos:</strong>um computador central onde armazena-se imagens, áudios, vídeos, etc </p>
+    <p> <strong>Segurança (firewall):</strong>um computador central onde armazena-se imagens, áudios, vídeos, etc. No caso de uma empresa
+      de comunicação visual, seria possível salvar todos os arquivos da empresa em um único lugar, possibilitando qualquer profissional de lá
+   trabalhar no mesmo arquivo (de preferência em momentos diferentes) </p>
+    <p> <strong>Streaming:</strong>um computador central dedicado a realizar streaming de dados, como a <i>Netflix, Disney+, Twitch</i> e outros </p>
+    <p> <strong>E-mail:</strong>um computador central que armazena e gerencia os e-mails de uma empresa </p>
+    <p> <strong>Web:</strong>um computador central de internet </p>
+
+ <hr />
+
+    <h2 id="estrutura-html">Como é uma estrutura básica de um HTML?</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <p>
+     Um código em HTML precisa conter obrigatóriamente, em sua estrutura, as tags "&lt;html&gt;", "&lt;head&gt;" e "&lt;body&gt;" e a instrução "&lt;!DOCTYPE&gt;".
+    </p>
+
+    <p>
+      A tag mãe é a "&lt;html&gt;", pois é a primeira tag a ser inserida no código antes de elaborarmos os conteúdos, já a "&lt;head&gt;" e "&lt;body&gt;" são
+         as duas filhas, estão no mesmo nível hierárquico uma da outra. A "&lt;head&gt;" abriga informações que são de interesse do navegador e outros
+             serviços da web, não para usuários do site, pois esses dados não são mostrados na tela. A "&lt;body&gt;" contém as informações que aparecerão
+               na tela do navegador, como este texto, por exemplo. 
+    </p>
+
+    <p>
+    Já DOCTYPE não é uma tag, e sim uma instrução. Ela indica para o navegador qual versão do HTML será utilizada para exibir a página.
+    Caso essa instrução não é acrescentada ao código, o navegador exibe as informações mesmo assim, porém numa versão genérica de compatibilidade onde
+    algumas tags e estilizações podem não funcionar 100% de forma correta. É sempre recomendado utilizar a versão mais recente do HTML a fim de evitar problemas
+    de compatibilidade. No momento, a versão mais recente é a HTML5, e para utilizá-la basca colocar: &lt;!DOCTYPE html&gt; como a primeira linha de código.
+    </p>
+
+     <hr />
+
+    <h2 id="tags">O que são Tags?</h2>
+    
+    <p>
+      São marcações de código que passam instruções para o navegador para renderizar as informações de certa forma, com o texto em itálico, em negrito, adicionando um parágrafo, alterando a cor de um texto,
+      acrescentando um link para outro site, etc. Além de estilo, podem servir para organizar, identificar ou até limitar o conteúdo de uma página.
+    </p>
+    <p>Geralmente uma tag possuem uma estrutura de abertura e fechamento, exemplo: &lt;abertura da tag&gt; "conteúdo" &lt;/fechadura da tag&gt;
+      (&lt;i&gt; "conteúdo" &lt;/i&gt;.
+       A tag i deixa o conteúdo dentro dela, em <i>itálico</i>).
+        Porém há tags que não possuem fechamento, como imput e img por exemplo, que funcionam da seguinte forma: &lt;tag/&gt; (&lt;imput type="text" /&gt;).
+      </p>
+
+      <p>
+    No exemplo anterior, eu demonstrei a tag "imput", que adiciona um campo em branco para que você escreva algo. Agora o "type", nada mais é do que um
+    atributo da tag. O que são atributos? São propriedades das tags, que mudam ou caracterizam como a tag irá trabalhar no navegador.
+    O "type", que seguiu a tag "imput" diz respeito ao tipo de imput que será acrescentado na página. Pode ser um imput de texto ou números por exemplo.
+    Aqui em "&lt;imput type="text" /&gt;" o tipo de imput acrescentado no navegador é referente a texto.
+      </p>
+
+ <hr />
+
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
+       Não esqueça de colocar links para outros sites e também de formatar o texto com 
+       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
+    <p>
+      Listas ordenadas são aquelas que possuem ordem, por exemplo:<br>
+      1 - O Senhor dos Anéis<br>
+      2 - Harry Potter<br>
+      3 - Eu sou o número 4<br>
+   </p>
+
+   <p>
+      Enquanto listas não ordenadas são aquelas que não necessitam de ordem, por exemplo:<br>
+      - Caju<br>
+      - Castanha<br>
+      - Uva Passa<br>
+   </p>
+
+   <p>
+      Ambas listas funcionam com uma tag "mãe" &lt;ul&gt; &lt;/ul&gt; (lista não ordenada) ou &lt;ol&gt; &lt;/ol&gt; (lista ordenada), que abrem e fecham a lista,
+      e também a ou as tags "filhas" &lt;li&gt;, como abaixo: <br>
+      &lt;ul&gt; <br>
+      &lt;li&gt; item A &lt;/li&gt; <br>
+      &lt;li&gt; item B &lt;/li&gt; <br>
+      &lt;li&gt; item C &lt;/li&gt; <br>     
+      &lt;/ul&gt; <br>
+      <br>
+      OU <br>
+      <br>
+      &lt;ol&gt; <br>
+      &lt;li&gt; item 1 &lt;/li&gt; <br>
+      &lt;li&gt; item 2 &lt;/li&gt; <br>
+      &lt;li&gt; item 3 &lt;/li&gt; <br>     
+      &lt;/ol&gt; <br>
+   </p>
+
+
+     <hr />
+
+    <h2 id="referencias">Links de referências</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <ul>
+        <li><a href="#">https://www.alura.com.br/apostila-html-css-javascript/03CA-a-spec-html?gclid=Cj0KCQiAzeSdBhC4ARIsACj36uGEAomkuXuSF5zIrNsoIskC85Y6eQw2lZixEXsqLoG6_fMfxNxowpMaAhD4EALw_wcB</a></li>
+
+        <hr />
+
+        <li><a href="#">https://medium.com/@junioralves_11958/o-que-s%C3%A3o-tags-do-html-e-qual-a-sua-import%C3%A2ncia-cadc13b00742</a></li>
+    </ul>
+
+</body>
 </html>
